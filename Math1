@@ -1,0 +1,221 @@
+# Math Calculaor
+# All rights reserved to Stonebrucken
+# Github 'Python Tasks' Repository
+
+import math
+import random
+import time
+
+
+def AreaPerimeter():
+
+    print("Perimeter & Area")
+
+    n1 = int(input("Enter your first number"))
+    n2 = int(input("Enter your second number"))
+
+    p1 = input("Perimeter or Area?")
+
+    if p1 == "Perimeter":
+       n11 = n1 + n2
+       print(n11)
+        
+
+    elif p1 == "Area":
+       n12 = n1 * n2
+       print(n12)
+        
+
+    else:
+       print("Invalid input")
+
+
+def CircleArea():
+
+    print("Area of Circle Calculator")
+    
+    radius = float(input("Enter the radius of Circle"))
+
+    cir1 = input("Work out the area for Circle or Semi-Circle?")
+
+    if cir1 == "Circle":
+        
+        radius2 = math.pi * radius * radius
+        print(radius2)
+
+    elif cir1 == "Semi-Circle":
+        radius21 = math.pi * radius * radius / 2
+        print(radius21)
+
+def TrapeziumArea():
+
+    print("Trapezium Area Calculator")
+
+    hax1 = int(input("Define a"))
+    hax2 = int(input("Define b"))
+    hax3 = int(input("Define height"))
+
+    hax4 = hax1 / 2 + hax2 / 2
+    hax5 = hax4 * hax3
+    print(hax5, "Is your answer")
+
+def Differentiation():
+
+    print("Differential Calculator")
+
+    co1 = int(input("Enter the coefficient respective of x"))
+    co2 = int(input("Enter your power assigned to x"))
+
+    co3 = co1 * co2
+    print(co3, "Is your coefficient")
+
+    co4 = co2 - 1
+
+    print(co3, "x", co4)
+
+def Integration():
+
+    print("Integral Calcuator")
+
+    inte1 = int(input("Enter your coefficient respective of x"))
+    inte2 = int(input("Enter your power assigned to x"))
+
+    inte3 = inte2 + 1
+    inte4 = inte1 / inte3
+
+    print(inte4, "Is your coefficient")
+
+    print(inte4, "x", inte3, "c")
+ 
+def Logarithims():
+
+    print("Basic Logarithim Calculator")
+
+    loge1 = int(input("Enter any number"))
+    loge2 = int(input("Enter a base"))
+ 
+
+    loge2 = loge1 * (math.log(loge1,loge2))
+    print(loge2, "is your answer")
+
+def NaturalLogarithims():
+
+    print("Natural Log Calculator")
+
+    loge11 = int(input("Enter any number"))
+    loge12 = int(input("Enter any base"))
+
+    loge13 = loge11 * math.e * loge12
+
+    print(loge13, "Is your Natural Log")
+
+def sinfunc():
+
+    input1 = int(input("Enter your angle"))
+    input2 = int(input("Enter your opposite sum"))
+    
+    calctrig = input2 / (math.sin(input1));
+    print(calctrig)
+
+def cosfunc():
+
+    input3 = int(input("Enter your angle"))
+    input4 = int(input("Enter your adajcent sum"))
+
+    calctrig2 = input4 / (math.cos(input3));
+    print(calctrig2)
+
+def tanfunc():
+
+    input5 = int(input("Enter your angle"))
+    input6 = int(input("Enter your opposite sum"))
+
+    calctrig3 = input6 / (math.tan(input5));
+    print(calctrig3)
+
+def Trigonometry():
+
+    print("Trig Calculator")
+
+    trio2 = input("Calculate sin, cos or tan?")
+
+    if trio2 == "sin":
+        sinfunc()
+    elif trio2 == "cos":
+        cosfunc()
+    elif trio2 == "tan":
+        tanfunc()
+
+def SquareRoots():
+
+    is1 = int(input("Which integer would you want to find the square root of?"))
+
+    is2 = math.sqrt(is1)
+    print(is2)
+
+def Indicies():
+
+    iss1 = int(input("Enter your integer"))
+    iss2 = int(input("Enter your power"))
+
+    iss3 = iss1**iss2
+    print(iss3)
+
+def Indicies2():
+
+    iss4 = int(input("Enter coefficient of x"))
+    iss5 = int(input("Enter the power respective of x"))
+    iss6 = int(input("Enter the power outside the bracket"))
+
+    iss456 = ("(", iss4,"x",iss5 ,")", iss6)
+    print(iss456)
+
+    iss7 = iss4 ** iss6
+    iss8 = iss5 * iss6
+    print(iss7, "x", iss8, "Is your answer")
+
+def CubeVolume():
+
+    vol1 = int(input("Enter depth"))
+    vol2 = int(input("Enter width"))
+    vol3 = int(input("Enter length"))
+
+    vol4 = vol1 * vol2 * vol3
+    print(vol4, "Is your volume")
+ 
+def intro():
+
+    aste1 = input("Work out AreaPerimeter, CircleArea, TrapeziumArea, Differentiation, Integration, Logarithims, NaturalLogarithims, Trigonometry, SquareRoots, Indicies, Indicies2 or CubeVolume")
+
+    if aste1 == "AreaPerimeter":
+        AreaPerimeter()
+    elif aste1 == "CircleArea":
+        CircleArea()
+    elif aste1 == "Differentiation":
+        Differentiation()
+    elif aste1 == "TrapeziumArea":
+        TrapeziumArea()
+    elif aste1 == "Integration":
+        Integration()
+    elif aste1 == "Logarithims":
+        Logarithims()
+    elif aste1 == "NaturalLogarithims":
+        NaturalLogarithims()
+    elif aste1 == "Trigonometry":
+        Trigonometry()
+    elif aste1 == "SquareRoots":
+        SquareRoots()
+    elif aste1 == "Indicies":
+        Indicies()
+    elif aste1 == "Indicies2":
+        Indicies2()
+    elif aste1 == "CubeVolume":
+        CubeVolume()
+    elif aste1 == "Random1":
+        Random1()
+    else:
+        print("Invalid Choice")
+
+intro()
+
+# Program to be extended as is not yet the final product
